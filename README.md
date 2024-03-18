@@ -1,2 +1,2 @@
-# quadratic_equation
-Quadratic equation
+# Quadratic equation
+
