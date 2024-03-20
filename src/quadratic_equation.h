@@ -2,8 +2,12 @@
 #define SRC_QUADRATIC_EQUATION_H
 
 #include <stdio.h>
+#include <math.h>
 
-double solve_equation(double a, double b, double c);
+void solve_equation(double a, double b, double c);
+
 double discriminant(double a, double b, double c);
+double discriminant(double a, double b, double c) ;
+double count_root(double a, double b, double c, double discriminant);
 
 #endif
