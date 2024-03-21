@@ -1,6 +1,7 @@
 #include "quadratic_equation.h"
 
 int solve_equation(double a, double b, double c) {
+    //Функция решает квадратное уравнение, возвращает кол-во корней
     int count_roots_ = 0;
     double d = discriminant(a, b, c);
     if (d < 0) {
@@ -20,9 +21,11 @@ int solve_equation(double a, double b, double c) {
 }
 
 double discriminant(double a, double b, double c) {
+    //Функция вычисляет дискриминант и возвращает его
     return b * b - 4 * a * c;
 }
 
 double calculate_quadratic_roots(double a, double b, double discriminant) {
+    //Функция вычисляет корни квадратного уравнения и возвращает один из них
     return (-b + sqrt(discriminant)) / (2 * a);
 }
