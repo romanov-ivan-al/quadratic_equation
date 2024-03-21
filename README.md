@@ -23,3 +23,11 @@
 
    ```bash
    make check
+
+
+
+## Скачать проект можно по ссылке:
+https://github.com/romanov-ivan-al/quadratic_equation.git
+
+## Для связи:
+Telegram: @godardje
