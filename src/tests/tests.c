@@ -73,7 +73,7 @@ START_TEST(test_count_root)
     double a = 1.0;
     double b = -3.0;
     double disc = 1.0;
-    double result = count_root(a, b, disc);
+    double result = calculate_quadratic_roots(a, b, disc);
     ck_assert_double_eq_tol(result, 2.0, 0.0001);
 }
 END_TEST
