@@ -7,10 +7,18 @@ else
 	FLAGS = -lcheck -lm
 endif
 
+all: quadratic_equation.a
 
-check: clean
-	$(CC) quadratic_equation.c ./tests/tests.c $(FLAGS) -o test
+quadratic_equation.a:
+	$(CC) -c quadratic_equation.c
+	ar -rc quadratic_equation.a quadratic_equation.o
+	ranlib quadratic_equation.a
+	rm -f *.o
+
+
+check: clean quadratic_equation.a
+	$(CC) quadratic_equation.a ./tests/tests.c $(FLAGS) -o test
 	./test
 
 clean:
-	rm -f test
+	rm -f test quadratic_equation.a *.o
