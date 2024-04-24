@@ -4,7 +4,7 @@ OS = $(uname)
 ifeq ($(OS), Linux)
 	FLAGS = -lcheck -lm -lpthread -lrt -lsubunit
 else
-	FLAGS = -lcheck -lm
+	FLAGS = -lcheck -lm -lpthread
 endif
 
 all: quadratic_equation.a
