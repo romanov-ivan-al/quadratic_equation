@@ -2,6 +2,7 @@ CC = gcc -std=c11 -Wall -Wextra -Werror
 
 
 ifeq ($(OS), Linux)
+	echo "\nThis is Linux\n"
 	FLAGS = -lcheck -lm -lpthread -lrt -lsubunit
 else
 	FLAGS = -lcheck -lm
