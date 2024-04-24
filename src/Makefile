@@ -1,13 +1,12 @@
 CC = gcc -std=c11 -Wall -Wextra -Werror
-OS = $(uname)
+OS = $(shell uname)
 
 ifeq ($(OS), Linux)
 	FLAGS = -lcheck -lm -lpthread -lrt -lsubunit
 else
-	FLAGS = -lcheck -lm -lpthread
+	FLAGS = -lcheck
 endif
 
-FLAGS = -lcheck -lm -lpthread -lrt -lsubunit
 
 all: quadratic_equation.a
 
