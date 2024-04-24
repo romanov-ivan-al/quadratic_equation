@@ -39,7 +39,7 @@ START_TEST(test_discriminant_positive)
     double b = -3.0;
     double c = 2.0;
     double result = discriminant(a, b, c);
-    ck_assert_double_eq_tol(result, 1.0, 0.0001);
+    ck_assert_double_eq(result, 1.0);
 }
 END_TEST
 
@@ -49,7 +49,7 @@ START_TEST(test_discriminant_zero)
     double b = -2.0;
     double c = 1.0;
     double result = discriminant(a, b, c);
-    ck_assert_double_eq_tol(result, 0.0, 0.0001);
+    ck_assert_double_eq(result, 0.0);
 }
 END_TEST
 
@@ -59,7 +59,7 @@ START_TEST(test_discriminant_negative)
     double b = 1.0;
     double c = 3.0;
     double result = discriminant(a, b, c);
-    ck_assert_double_eq_tol(result, -23.0, 0.0001);
+    ck_assert_double_eq(result, -23.0);
 }
 END_TEST
 
@@ -69,7 +69,7 @@ START_TEST(test_count_root)
     double b = -3.0;
     double disc = 1.0;
     double result = calculate_quadratic_roots(a, b, disc);
-    ck_assert_double_eq_tol(result, 2.0, 0.0001);
+    ck_assert_double_eq(result, 2.0);
 }
 END_TEST
 
