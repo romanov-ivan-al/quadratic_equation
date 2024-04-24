@@ -17,7 +17,7 @@ quadratic_equation.a:
 
 
 check: clean quadratic_equation.a
-	$(CC) quadratic_equation.a ./tests/tests.c $(FLAGS) -o test
+	$(CC) $(FLAGS) quadratic_equation.a ./tests/tests.c  -o test
 	./test
 
 clean:
