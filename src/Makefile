@@ -1,5 +1,5 @@
 CC = gcc -std=c11 -Wall -Wextra -Werror
-OS = $(shell uname -s)
+OS = $(uname)
 
 ifeq ($(OS), Linux)
 	FLAGS = -lcheck -lm -lpthread -lrt -lsubunit
